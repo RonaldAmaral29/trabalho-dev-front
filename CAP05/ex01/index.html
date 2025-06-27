@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex01</title>
+    <style>
+        img {
+            float: left;
+        }
+
+        h1 {
+            border-bottom: solid thin #909;
+            color: #909;
+            text-align: right;
+        }
+
+        fieldset {
+            border: solid #FCC;
+        }
+
+        input,
+        textarea {
+            border-style: none;
+            background-color: #FCC;
+            width: 500px;
+            margin: 10px 0;
+        }
+
+        label {
+            width: 100px;
+            display: inline-block;
+        }
+
+        /* Seletor de Atributo */
+        input[type="submit"] {
+            width: 100px;
+            padding: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Dados da conta</h1>
+    <img src="form1_back.jpg" alt="">
+    <form action="">
+        <fieldset>
+            <legend>Dados Pessoais:</legend>
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="" size="" maxlength="">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="" size="" maxlength="">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Dados da Conta:</legend>
+            <div>
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" placeholder="" size="" maxlength="">
+            </div>
+            <div>
+                <label for="frase_opcional">Frase<br>opcional:</label>
+                <textarea name="frase_opcional" id="frase_opcional"></textarea>
+            </div>
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
